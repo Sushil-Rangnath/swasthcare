@@ -10,11 +10,7 @@ pipeline {
     }
 
     stages {
-        stage('Clone') {
-            steps {
-                git 'https://github.com/Sushil-Rangnath/swasthcare.git'
-            }
-        }
+
 
         stage('Build') {
             steps {
