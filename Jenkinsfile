@@ -5,10 +5,9 @@ pipeline {
         maven 'Maven 3.8.5'  // Make sure this is installed in Jenkins
     }
 
-    environment {
-        DEPLOY_DIR = "/home/ubuntu/backend"  // or any path you choose
-    }
-
+   environment {
+       DEPLOY_DIR = "${env.WORKSPACE}/deploy"
+   }
     stages {
 
 
